@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Vélo'v, vélos en libre-service à Lyon</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="vélo'v est le service de vélo-partage dans la métropole de Lyon.">
+        <link rel="stylesheet" href="css/style.css" />
+        <link href='css/fonts.css' rel='stylesheet' />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+        <link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+        <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v1.0.0/MarkerCluster.css' rel='stylesheet' />
+        <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v1.0.0/MarkerCluster.Default.css' rel='stylesheet' />
+    </head>
+    
+    <body>
+        <div id="site_container">
+            <header>
+                <div id="title">
+                    <div><a href="#">vél</a></div>
+                    <div id="logo_o"><div id="logo_o_container"><a href="#">ooo</a></div></div>
+                    <div><a href="#">'v</a></div>
+                </div>
+            </header>
+            
+            <section id="carousel">
+                <div id="carousel_container">
+                    
+                    <div class="item">
+                        <div class="item_image">
+                        </div>
+                        <div class="item_body">
+                            <h3>Bienvenue</h3>
+                            <h1>Découvrez <strong>Lyon</strong> en <strong>Vélo'v</strong></h1>
+                            <p>Vous pouvez <strong>louer un vélo</strong>, 7j/7, 24h/24, dans toutes les stations Vélo'v de Lyon.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item_image">
+                            <div id="marker_img1"><i class="fas fa-bicycle"></i></div>
+                            <div id="marker_img2"><i class="fas fa-bicycle"></i></div>
+                            <div id="marker_img3"><i class="fas fa-bicycle"></i></div>
+                        </div>
+                        <div class="item_body">
+                                <h3>Étape 1</h3>
+                                <h2>Carte des stations</h2>
+                                <p>Trouvez un Vélo'v autour de vous et cliquez sur la station de votre choix.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item_image">
+                            <div id="reserver_img">Réserver</div>
+                            <div id="hand_img"><i class="far fa-hand-pointer"></i></div>
+                        </div>
+                        <div class="item_body">
+                                <h3>Étape 2</h3>
+                                <h2>Réserver, signer et valider</h2>
+                                <p>Remplissez le formulaire puis signez votre <strong>réservation</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item_image_count">
+                            <div class="count_img">
+                                <div class="count0_img">0</div>
+                            </div>
+                            <div class="count_img">
+                                <div id="count_img_container">
+                                    <div id="count3_img">3</div>
+                                    <div id="count2_img">2</div>
+                                    <div id="count1_img">1</div>
+                                    <div class="count0_img">0</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item_body">
+                                <h3>Étape 3</h3>
+                                <h2>Vélo réservé</h2>
+                                <p>Pour toute réservation, vous disposez de 20 minutes pour libérer le Vélo’v choisi.</p>
+                        </div>
+                    </div>
+        
+                </div>
+                <div id="carousel_prev"><i class="fas fa-angle-left"></i></div>
+                <div id="carousel_next"><i class="fas fa-angle-right"></i></div>
+                <div id="carousel_pause"><i class="fas fa-pause"></i></div>
+                <div id="arrow"><i class="fas fa-angle-down"></i></div>
+            </section>
+
+            <section id="service">
+                <div id="service_container">
+                    
+                    <div id='map-leaflet' class='map'></div>
+                
+                    <div id='reservation'>
+                        <div id='btn_close'><i class="fas fa-long-arrow-alt-right"></i></div>
+                        <h2>Détails de la station</h2>
+                        <div id="reservation_details">
+                            <div id="station_item">
+                                <div id="station_a">
+                                    Station
+                                </div>
+                                <div id="station_name"></div>
+                            </div>
+                            <div id="station_info">
+                                <div id="available_bikes">
+                                    <div class="icon"><i class="fas fa-bicycle"></i></div>
+                                    <div class="nbr"></div>
+                                </div>
+                                <div id="bike_stands">
+                                    <div class="icon"><i class="fas fa-parking"></i></div>
+                                    <div class="nbr"></div>
+                                </div>
+
+                                <div id="station_address"></div>
+                            </div>
+                            
+                            <form id="reservation_form">
+                                <input type="text" name="prenom" id="prenom" placeholder="Prénom">
+                                <input type="text" name="name" id="nom" placeholder="Nom">
+                                <div id="checkbox_rgpd">
+                                    <label for="rgpd" class="checkbox checked">
+                                        <input type="checkbox" name="accept" id="rgpd" class="checkbox" value="rgpd">
+                                        <span class="box"><span></span></span>
+                                    </label>
+                                    J'accepte les <a href="rgpd.html" target="_blank">conditions générales d'utilisation</a>
+                                </div>
+                                <button class="btn_reservation" id="btn_reserver">Réserver</button>
+                            </form>  
+                            
+                            <form id="sign_form">
+                                <div id="sign">Signature</div>
+                                <canvas id="canvas_sign"></canvas>
+                                <button  type="submit" class="btn_sign" id="btn_valider">Valider</button>
+                                <button class="btn_sign" id="btn_clear">Annuler</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div id="validation">
+                        <p id="ok">
+                            Vélo réservé à la station <span id="infostation"></span> par <span id="infoprenom"></span> <span id="infonom"></span><br />
+                            Temps restant: <span id="minute"></span>min <span id="seconde"></span>sec
+                        </p>
+                    </div>   
+                </div> 
+            </section>
+
+        </div>
+        <script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
+        <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v1.0.0/leaflet.markercluster.js'></script>
+        <script src="https://code.jquery.com/jquery.min.js"></script>
+        <script src="js/ajax.js"></script>
+        <script src="js/carousel.js"></script>
+        <script src="js/map.js"></script>
+        <script src="js/canvas.js"></script>
+        <script src="js/form.js"></script>
+    </body>
+</html>

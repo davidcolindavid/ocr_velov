@@ -1,0 +1,109 @@
+
+@font-face {
+    font-family: 'maaxblack';
+    src: url('../fonts/maax_black-webfont.eot');
+    src: url('../fonts/maax_black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/maax_black-webfont.woff2') format('woff2'),
+         url('../fonts/maax_black-webfont.woff') format('woff'),
+         url('../fonts/maax_black-webfont.ttf') format('truetype'),
+         url('../fonts/maax_black-webfont.svg#maaxblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'maaxbold';
+    src: url('../fonts/maax-bold-webfont.eot');
+    src: url('../fonts/maax-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/maax-bold-webfont.woff2') format('woff2'),
+         url('../fonts/maax-bold-webfont.woff') format('woff'),
+         url('../fonts/maax-bold-webfont.ttf') format('truetype'),
+         url('../fonts/maax-bold-webfont.svg#maaxbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'maaxbold_italic';
+    src: url('../fonts/maax-bolditalic-webfont.eot');
+    src: url('../fonts/maax-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/maax-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/maax-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/maax-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/maax-bolditalic-webfont.svg#maaxbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'maaxitalic';
+    src: url('../fonts/maax-italic-webfont.eot');
+    src: url('../fonts/maax-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/maax-italic-webfont.woff2') format('woff2'),
+         url('../fonts/maax-italic-webfont.woff') format('woff'),
+         url('../fonts/maax-italic-webfont.ttf') format('truetype'),
+         url('../fonts/maax-italic-webfont.svg#maaxitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'maaxmedium';
+    src: url('../fonts/maax-medium-webfont.eot');
+    src: url('../fonts/maax-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/maax-medium-webfont.woff2') format('woff2'),
+         url('../fonts/maax-medium-webfont.woff') format('woff'),
+         url('../fonts/maax-medium-webfont.ttf') format('truetype'),
+         url('../fonts/maax-medium-webfont.svg#maaxmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'maaxmedium_italic';
+    src: url('../fonts/maax-mediumitalic-webfont.eot');
+    src: url('../fonts/maax-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/maax-mediumitalic-webfont.woff2') format('woff2'),
+         url('../fonts/maax-mediumitalic-webfont.woff') format('woff'),
+         url('../fonts/maax-mediumitalic-webfont.ttf') format('truetype'),
+         url('../fonts/maax-mediumitalic-webfont.svg#maaxmedium_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'maaxregular';
+    src: url('../fonts/maax-webfont.eot');
+    src: url('../fonts/maax-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/maax-webfont.woff2') format('woff2'),
+         url('../fonts/maax-webfont.woff') format('woff'),
+         url('../fonts/maax-webfont.ttf') format('truetype'),
+         url('../fonts/maax-webfont.svg#maaxregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
